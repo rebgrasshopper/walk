@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Woods</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type='text/javascript' src='js.js'></script>
+    <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
+</head>
+
+<body class='brown'>
+
+<!--NAVBAR-->
+    <nav class='navbar navbar-inverse navbar-expand-lg'>
+        <div class='container-fluid'>
+            <div class='navbar-header'>
+                <a class='navbar-brand'>Your Mind</a>
+            </div>
+            <ul class='nav navbar-nav'>
+                <li><a href='#'>Think thoughts</a></li>
+                <li><a href='#'>No Thoughts</a></li>
+                <li><a href='#'>Recite Pi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+        <h1>The Woods</h1>
+
+<!--IMAGE AND ALERTS -->
+    <div class='main'>
+        <aside id='action' class='pop'>
+            <div class='alert alert-success'>
+                <p>You sit...</p>
+                <p>thoughtfully considering the trees, with their many forest denizens.</p>
+            </div>
+        </aside>
+        <img src='https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/good_day_for_walk_in_woods.jpg?itok=9Aat9Sw3'
+            title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
+        <aside id='thought' class='pop'>
+            <div class='alert alert-warning'>
+                <p>You think...</p>
+                <p>You realize how tall and strong the trees seem to grow in order to escape the shade.</p>
+            </div>
+        </aside>
+    </div><!--end main-->
+<!--BUTTONS-->
+    <div class='buttonBank'>
+        <button class='btn btn-info'>
+            <a href="./meadow.html">Back to the meadow.</a>
+        </button>
+        <button class='btn btn-warning' role='button' onclick='showAction()'>
+            <a href="#">Spend a while in the woods.</a>
+        </button>
+    </div>
+
+</body>
+
+</html>
