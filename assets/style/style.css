@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Yellowtail, sans-serif;
+}
+
+
+
+
+
+
+
+/*   BACKGROUND COLORS   */
+
+.blue {
+    background-color: cornflowerblue;
+}
+
+.green {
+    background-color: yellowgreen;
+}
+
+.brown {
+    background-color: rgb(136, 124, 101);
+}
+
+
+
+
+
+
+
+/*   NAVBAR   */
+
+#hrDiv {
+    width: 450px;
+}
+
+
+
+
+
+/*   IMAGES AND ALERTS   */
+
+.main {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -80px;
+}
+
+img {
+    height: 400px;
+    width: 620px;
+    object-fit: cover;
+}
+
+
+.pop {
+    width: 200px;
+    border-radius: 15px;
+    line-height: 2em;
+
+}
+
+#action {
+    margin-left: 10px;
+    visibility: hidden;
+}
+
+#thought {
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*   ACTION LINKS   */
+
+.buttonBank {
+    margin-top: -80px;
+}
+
+a {
+    font-family: MuseoModerno, sans-serif;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 0px 5px 0px 5px;
+    color: rgb(43, 42, 42);
+}
+
+a:visited {
+    color: rgb(75, 55, 17);
+}
+
+a:hover {
+    background-color: green;
+    color: greenyellow;
+}
+
+a:focus {
+    background-color: fuchsia;
+    color: gold;
+    font-size: larger;
+}
+
+a:active {
+    background-color: indigo;
+    color: mediumorchid;
+    font-size: x-large;
+}
