@@ -14,17 +14,19 @@
 
 <body class='brown'>
 
-<!--NAVBAR-->
-    <nav class='navbar navbar-inverse navbar-expand-lg'>
+    <!--NAVBAR-->
+    <nav class='navbar navbar-inverse navbar-expand-sm'>
         <div class='container-fluid'>
             <div class='navbar-header'>
                 <a class='navbar-brand'>Your Mind</a>
             </div>
-            <div id='hrDiv'><hr /></div>
+            <div id='hrDiv'>
+                <hr />
+            </div>
             <ul class='nav navbar-nav'>
-                <li><a href='#' role='button' onclick="showThoughts()">Think thoughts</a></li>
+                <li><a href='#' role='button' onclick="showThoughts(woodsThoughts)">Think thoughts</a></li>
                 <li><a href='#' role='button' onclick="showNoThoughts()">No Thoughts</a></li>
-                <li><a href='#' role='button' onclick="showNotice()">Notice Something</a></li>
+                <li><a href='#' role='button' onclick="showNotice(woodsNotices)">Notice Something</a></li>
             </ul>
         </div>
     </nav>
@@ -32,24 +34,38 @@
 
 
 
-        <h1>The Woods</h1>
 
-<!--IMAGE AND ALERTS -->
+
+    <!--IMAGE AND ALERTS -->
     <div class='main'>
-        <aside id='action' class='pop'>
-            <div class='alert alert-success'>
-                <p>You sit<br />...<br />thoughtfully considering the trees, with their many forest denizens.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>The Woods</h1>
+                </div>
             </div>
-        </aside>
-        <img src='https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/good_day_for_walk_in_woods.jpg?itok=9Aat9Sw3'
-            title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
-        <aside id='thought' class='pop'>
-            <div class='alert alert-warning'>
-                <p id='changingThought'>You think<br />...<br />You realize how tall and strong the trees seem to grow in order to escape the shade.</p>
-            </div>
-        </aside>
+            <div class="row">
+                <aside id='action' class='pop col=sm-12 col-md-1 col-lg-3'>
+                    <div class='alert alert-success'>
+                        <p>You sit<br />...<br />thoughtfully considering the trees, with their many forest denizens.
+                        </p>
+                    </div>
+                </aside>
+                <div class="col-sm-12 col-md-10 col-lg-6">
+                    <img src='https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/good_day_for_walk_in_woods.jpg?itok=9Aat9Sw3'
+                        title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
+                </div>
+                <aside id='thought' class='pop col=sm-12 col-md-1 col-lg-3'>
+                    <div class='alert alert-warning'>
+                        <p id='changingThought'>You think<br />...<br />You realize how tall and strong the trees seem
+                            to grow in order to escape the shade.</p>
+                    </div>
+                </aside>
+            </div><!--end row-->
+        </div><!--end container-->
     </div><!--end main-->
-<!--BUTTONS-->
+
+    <!--BUTTONS-->
     <div class='buttonBank'>
         <button class='btn btn-info'>
             <a href="./index.html">Back to the meadow.</a>

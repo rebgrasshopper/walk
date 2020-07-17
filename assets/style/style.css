@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 450px;
 }
 
+.navbar {
+    margin-bottom: 30px;
+}
+
 
 
 
@@ -46,10 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
     height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -80px;
 }
 
 img {
@@ -116,5 +116,5 @@ a:focus {
 a:active {
     background-color: indigo;
     color: mediumorchid;
-    font-size: x-large;
+    font-size: larger;
 }

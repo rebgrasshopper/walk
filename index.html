@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>A Traipse Through The Flowers</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script type='text/javascript' src='js.js'></script>
-        <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
-    </head>
+<head>
+    <title>A Meadow</title>
 
-    <body class='green'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type='text/javascript' src='js.js'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
+    <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
+</head>
 
-<!-- NAVBAR -->
-        <nav class='navbar navbar-inverse navbar-expand-lg'>
-            <div class='container-fluid'>
-                <div class='navbar-header'>
-                    <a class='navbar-brand'>Your Mind</a>
-                </div>
-                <ul class='nav navbar-nav'>
-                    <li><a href='#'>Think thoughts</a></li>
-                    <li><a href='#'>No Thoughts</a></li>
-                    <li><a href='#'>Recite Pi</a></li>
-                </ul>
+<body class='green'>
+
+<!--NAVBAR-->
+    <nav class='navbar navbar-inverse navbar-expand-lg'>
+        <div class='container-fluid'>
+            <div class='navbar-header'>
+                <a class='navbar-brand'>Your Mind</a>
             </div>
-        </nav>
+            <div id='hrDiv'><hr /></div>
+            <ul class='nav navbar-nav'>
+                <li><a href='#' role='button' onclick="showThoughts(meadowThoughts)">Think thoughts</a></li>
+                <li><a href='#' role='button' onclick="showNoThoughts()">No Thoughts</a></li>
+                <li><a href='#' role='button' onclick="showNotice(meadowNotices)">Notice Something</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <h1>A Meadow</h1>
 
-<!-- IMAGES AND ALERTS -->
-        <img src="https://www.irishtimes.com/polopoly_fs/1.3871416.1556191655!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" title="a close-up show of wildflowers in a meadow: white, blue, purple, and yellow flowers">
-        <aside id='stay'>
-            <div class='alert alert-warning'><p>You sit...</p>
-                <p>peacefully gazing at the flowers as they sway in the breeze.</p></div>
+
+
+        <h1>The Woods</h1>
+
+<!--IMAGE AND ALERTS -->
+    <div class='main'>
+        <aside id='action' class='pop'>
+            <div class='alert alert-success'>
+                <p>You sit<br />...<br />peacefully gazing at the flowers as they sway in the breeze.</p>
+            </div>
         </aside>
+        <img src="https://www.irishtimes.com/polopoly_fs/1.3871416.1556191655!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" title="a close-up show of wildflowers in a meadow: white, blue, purple, and yellow flowers">
+        <aside id='thought' class='pop'>
+            <div class='alert alert-warning'>
+                <p id='changingThought'>Hello</p>
+            </div>
+        </aside>
+    </div><!--end main-->
+<!--BUTTONS-->
+<div class='buttonBank'>
+    <button class='btn btn-info'>
+        <a href='./woods.html'><strong>Wander into the woods.</strong></a>
+    </button>
+    <button class='btn btn-warning' role='button' onclick="showAction()">
+        <a href='#'>Just sit in the meadow.</a>
+    </button>
+    <button class='btn btn-info'>
+        <a href='./clouds.html' target="_blank">Gaze at the clouds.</a>
+    </button>
+</div>
 
-<!-- BUTTONS -->
-    <div class='buttonBank'>
-        <button class='btn btn-info'>
-            <a href='./woods.html'><strong>Wander into the woods.</strong></a>
-        </button>
-        <button class='btn btn-warning' role='button' onclick="showDiv()">
-            <a href='#'>Just sit in the meadow.</a>
-        </button>
-        <button class='btn btn-info'>
-            <a href='./clouds.html' target="_blank">Gaze at the clouds.</a>
-        </button>
-    </div>
-    </body>
+</body>
+
 </html>
