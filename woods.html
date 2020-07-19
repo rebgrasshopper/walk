@@ -14,22 +14,18 @@
 
 <body class='brown'>
 
-    <!--NAVBAR-->
-    <nav class='navbar navbar-inverse navbar-expand-sm'>
-        <div class='container-fluid'>
-            <div class='navbar-header'>
-                <a class='navbar-brand'>Your Mind</a>
-            </div>
-            <div id='hrDiv'>
-                <hr />
-            </div>
-            <ul class='nav navbar-nav'>
-                <li><a href='#' role='button' onclick="showThoughts(woodsThoughts)">Think thoughts</a></li>
-                <li><a href='#' role='button' onclick="showNoThoughts()">No Thoughts</a></li>
-                <li><a href='#' role='button' onclick="showNotice(woodsNotices)">Notice Something</a></li>
-            </ul>
+
+        <!--NAVBAR-->
+        <div class="navbar full-length">
+            <h1 class="navbar-brand col-sm-12 col-md-3 col-xl-2 text-center">Your Mind</h1>
+            <nav>
+                <ul class="nav text-center justify-content-end">
+                    <li class='nav-item'><a href='#'>Think thoughts</a></li>
+                    <li class='nav-item'><a href='#'>No Thoughts</a></li>
+                    <li class='nav-item'><a href='#'>Recite Pi</a></li>
+                  </ul>
+            </nav>
         </div>
-    </nav>
 
 
 
@@ -37,32 +33,27 @@
 
 
     <!--IMAGE AND ALERTS -->
-    <div class='main'>
-        <div class="container">
+    <div class='main container'>
+
+            <header class="row"><h1 class="col-12">The Woods</h1></header>
+
             <div class="row">
-                <div class="col-12">
-                    <h1>The Woods</h1>
-                </div>
-            </div>
-            <div class="row">
-                <aside id='action' class='pop col=sm-12 col-md-1 col-lg-3'>
+                <aside id='action' class='pop col-3'>
                     <div class='alert alert-success'>
                         <p>You sit<br />...<br />thoughtfully considering the trees, with their many forest denizens.
                         </p>
                     </div>
                 </aside>
-                <div class="col-sm-12 col-md-10 col-lg-6">
-                    <img src='https://www.commondreams.org/sites/default/files/styles/cd_large/public/views-article/good_day_for_walk_in_woods.jpg?itok=9Aat9Sw3'
-                        title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
-                </div>
-                <aside id='thought' class='pop col=sm-12 col-md-1 col-lg-3'>
+
+                <img src='./assets/woods-photo-by-pixabay-pexels.jpg' class="col-6" title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
+                
+                <aside id='thought' class='pop col-3'>
                     <div class='alert alert-warning'>
-                        <p id='changingThought'>You think<br />...<br />You realize how tall and strong the trees seem
-                            to grow in order to escape the shade.</p>
+                        <p id='changingThought'>You think<br />...<br />You realize how tall and strong the trees seem to grow in order to escape the shade.</p>
                     </div>
                 </aside>
+                
             </div><!--end row-->
-        </div><!--end container-->
     </div><!--end main-->
 
     <!--BUTTONS-->

@@ -14,52 +14,57 @@
 
 <body class='green'>
 
-<!--NAVBAR-->
-    <nav class='navbar navbar-inverse navbar-expand-lg'>
-        <div class='container-fluid'>
-            <div class='navbar-header'>
-                <a class='navbar-brand'>Your Mind</a>
-            </div>
-            <div id='hrDiv'><hr /></div>
-            <ul class='nav navbar-nav'>
-                <li><a href='#' role='button' onclick="showThoughts(meadowThoughts)">Think thoughts</a></li>
-                <li><a href='#' role='button' onclick="showNoThoughts()">No Thoughts</a></li>
-                <li><a href='#' role='button' onclick="showNotice(meadowNotices)">Notice Something</a></li>
+
+    <!--NAVBAR-->
+    <div class="navbar full-length">
+        <h1 class="navbar-brand col-sm-12 col-md-3 col-xl-2 text-center">Your Mind</h1>
+        <nav>
+            <ul class="nav text-center justify-content-end">
+                <li class='nav-item'><a href='#'>Think thoughts</a></li>
+                <li class='nav-item'><a href='#'>No Thoughts</a></li>
+                <li class='nav-item'><a href='#'>Recite Pi</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
 
 
 
-        <h1>The Woods</h1>
 
 <!--IMAGE AND ALERTS -->
-    <div class='main'>
-        <aside id='action' class='pop'>
-            <div class='alert alert-success'>
-                <p>You sit<br />...<br />peacefully gazing at the flowers as they sway in the breeze.</p>
-            </div>
-        </aside>
-        <img src="https://www.irishtimes.com/polopoly_fs/1.3871416.1556191655!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" title="a close-up show of wildflowers in a meadow: white, blue, purple, and yellow flowers">
-        <aside id='thought' class='pop'>
-            <div class='alert alert-warning'>
-                <p id='changingThought'>Hello</p>
-            </div>
-        </aside>
-    </div><!--end main-->
+    <div class='main container'>
+
+        <header class="row"><h1 class="col-12">A Meadow</h1></header>
+
+        <div class="row">
+            <aside id='action' class='pop col-3'>
+                <div class='alert alert-success'>
+                    <p>You sit<br />...<br />peacefully gazing at the flowers as they sway in the breeze.</p>
+                </div>
+            </aside>
+
+            <img src="./assets/meadow-photo-by-Kristina-Paukshtite-pexels.jpg" class="col-6" title="a close-up show of wildflowers in a meadow: white, blue, purple, and yellow flowers">
+
+            <aside id='thought' class='pop col-3'>
+                <div class='alert alert-warning'>
+                    <p id='changingThought'>Hello</p>
+                </div>
+            </aside>
+        </div><!--/row-->
+    </div><!--/main-->
+
 <!--BUTTONS-->
-<div class='buttonBank'>
-    <button class='btn btn-info'>
-        <a href='./woods.html'><strong>Wander into the woods.</strong></a>
-    </button>
-    <button class='btn btn-warning' role='button' onclick="showAction()">
-        <a href='#'>Just sit in the meadow.</a>
-    </button>
-    <button class='btn btn-info'>
-        <a href='./clouds.html' target="_blank">Gaze at the clouds.</a>
-    </button>
-</div>
+    <div class='buttonBank'>
+        <button class='btn btn-info'>
+            <a href='./woods.html'><strong>Wander into the woods.</strong></a>
+        </button>
+        <button class='btn btn-warning' role='button' onclick="showAction()">
+            <a href='#'>Just sit in the meadow.</a>
+        </button>
+        <button class='btn btn-info'>
+            <a href='./clouds.html' target="_blank">Gaze at the clouds.</a>
+        </button>
+    </div>
 
 </body>
 

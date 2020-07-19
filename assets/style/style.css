@@ -34,10 +34,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*   NAVBAR   */
 
-#hrDiv {
-    width: 450px;
-}
-
 .navbar {
     margin-bottom: 30px;
 }
@@ -67,13 +63,11 @@ img {
 }
 
 #action {
-    margin-left: 10px;
-    visibility: hidden;
+    visibility: visible;
 }
 
 #thought {
-    margin-right: 10px;
-    visibility: hidden;
+    visibility: visible;
 }
 
 
