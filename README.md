@@ -1,6 +1,9 @@
 **A Walk**
 
-This is meant to be a relaxing multiple choice exploration of basic HTML capabilities.
+https://rebgrasshopper.github.io/walk/
+
+
+This is meant to be a relaxing multiple choice exploration of basic HTML, CSS, and JS capabilities.
 
 Currently it exists as three different pages, [meadow](./meadow), [clouds](./clouds), and [woods](./woods).
 
