@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type='text/javascript' src='js.js'></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
     <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
@@ -16,13 +16,13 @@
 
 
         <!--NAVBAR-->
-        <div class="navbar full-length">
+        <div class="navbar full-length woods">
             <h1 class="navbar-brand col-sm-12 col-md-3 col-xl-2 text-center">Your Mind</h1>
             <nav>
                 <ul class="nav text-center justify-content-end">
-                    <li class='nav-item'><a href='#'>Think thoughts</a></li>
-                    <li class='nav-item'><a href='#'>No Thoughts</a></li>
-                    <li class='nav-item'><a href='#'>Recite Pi</a></li>
+                    <li class='nav-item'><a href='#' id='think'>Think thoughts</a></li>
+                    <li class='nav-item'><a href='#' id='no-think'>No Thoughts</a></li>
+                    <li class='nav-item'><a href='#' id='notice'>Notice</a></li>
                   </ul>
             </nav>
         </div>
@@ -37,7 +37,7 @@
 
             <header class="row"><h1 class="col-12">The Woods</h1></header>
 
-            <div class="row">
+            <div class="row d-flex align-items-center">
                 <aside id='action' class='pop col-3'>
                     <div class='alert alert-success'>
                         <p>You sit<br />...<br />thoughtfully considering the trees, with their many forest denizens.
@@ -48,11 +48,11 @@
                 <img src='./assets/woods-photo-by-pixabay-pexels.jpg' class="col-6" title='a dirt path leading into woods with mixed thick and thin trees and a moderate amount of green leafy undergrowth'>
                 
                 <aside id='thought' class='pop col-3'>
-                    <div class='alert alert-warning'>
+                    <div class='alert alert-dark'>
                         <p id='changingThought'>You think<br />...<br />You realize how tall and strong the trees seem to grow in order to escape the shade.</p>
                     </div>
                 </aside>
-                
+
             </div><!--end row-->
     </div><!--end main-->
 
@@ -61,11 +61,13 @@
         <button class='btn btn-info'>
             <a href="./index.html">Back to the meadow.</a>
         </button>
-        <button class='btn btn-warning' role='button' onclick='showAction()'>
+        <button class='btn btn-warning' role='button' id='stay'>
             <a href="#">Spend a while in the woods.</a>
         </button>
     </div>
 
+
+    <script type='text/javascript' src='js.js'></script>
 </body>
 
 </html>

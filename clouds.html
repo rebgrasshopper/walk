@@ -5,7 +5,6 @@
 
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
         integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-    <script type='text/javascript' src='js.js'></script>
     <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
@@ -14,23 +13,23 @@
 <body class='blue'>
 
         <!--NAVBAR-->
-        <div class="navbar full-length">
+        <div class="navbar full-length sky">
             <h1 class="navbar-brand col-sm-12 col-md-3 col-xl-2 text-center">Your Mind</h1>
             <nav>
                 <ul class="nav text-center justify-content-end">
-                    <li class='nav-item'><a href='#'>Think thoughts</a></li>
-                    <li class='nav-item'><a href='#'>No Thoughts</a></li>
-                    <li class='nav-item'><a href='#'>Recite Pi</a></li>
+                    <li class='nav-item'><a href='#' id='think'>Think thoughts</a></li>
+                    <li class='nav-item'><a href='#' id='no-think'>No Thoughts</a></li>
+                    <li class='nav-item'><a href='#' id='notice'>Notice</a></li>
                   </ul>
             </nav>
         </div>
 
-    <h1>The Sky</h1>
-
 <!-- IMAGES AND ALERTS -->
-
     <section class="main container">
-        <div class="row">
+
+        <header class="row"><h1 class="col-12">The Sky</h1></header>
+
+        <div class="row d-flex align-items-center">
             <aside id='action' class='pop col-3'>
                 <div class='alert alert-success'>
                     <p>You sit<br />...<br />peacefully gazing at the clouds wafting across the cyan sky.</p>
@@ -40,7 +39,7 @@
             <img src='./assets/sky-photo-by-pixabay-pexels.jpg' class="col-6" title='blue sky, gradient from deep blue at the top to light blue at the bottom, whith crisp, white, fluffy clouds scattered across it'>
 
             <aside id='thought' class='pop col-3'>
-                <div class='alert alert-warning'><p id="changing-thought"></p></div>
+                <div class='alert alert-dark'><p id="changingThought"></p></div>
             </aside>
             
         </div><!--/row-->
@@ -49,11 +48,14 @@
 
 <!-- BUTTONS -->
     <div class='buttonBank'>
-        <button class='btn btn-info' role='button' onclick='showDiv()'>
+        <button class='btn btn-info' role='button' id='stay'>
             <a href='#'>Continue skygazing.</a>
         </button>
         <button class='btn btn-warning'>
             <a href='./index.html'>Look back down.</a>
         </button>
     </div>
+
+    <script type='text/javascript' src='js.js'></script>
 </body>
+</html>

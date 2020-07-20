@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type='text/javascript' src='js.js'></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
     <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
@@ -16,13 +16,13 @@
 
 
     <!--NAVBAR-->
-    <div class="navbar full-length">
+    <div class="navbar full-length meadow">
         <h1 class="navbar-brand col-sm-12 col-md-3 col-xl-2 text-center">Your Mind</h1>
         <nav>
             <ul class="nav text-center justify-content-end">
-                <li class='nav-item'><a href='#'>Think thoughts</a></li>
-                <li class='nav-item'><a href='#'>No Thoughts</a></li>
-                <li class='nav-item'><a href='#'>Recite Pi</a></li>
+                <li class='nav-item'><a href='#' id='think'>Think thoughts</a></li>
+                <li class='nav-item'><a href='#' id='no-think'>No Thoughts</a></li>
+                <li class='nav-item'><a href='#' id='notice'>Notice</a></li>
             </ul>
         </nav>
     </div>
@@ -36,17 +36,17 @@
 
         <header class="row"><h1 class="col-12">A Meadow</h1></header>
 
-        <div class="row">
+        <div class="row d-flex align-items-center">
             <aside id='action' class='pop col-3'>
                 <div class='alert alert-success'>
                     <p>You sit<br />...<br />peacefully gazing at the flowers as they sway in the breeze.</p>
                 </div>
             </aside>
 
-            <img src="./assets/meadow-photo-by-Kristina-Paukshtite-pexels.jpg" class="col-6" title="a close-up show of wildflowers in a meadow: white, blue, purple, and yellow flowers">
+            <img src="./assets/meadow-photo-by-Kristina-Paukshtite-pexels.jpg" class="col-6" title="a close-up show of wildflowers in a meadow: red, blue, purple, white, and yellow flowers">
 
             <aside id='thought' class='pop col-3'>
-                <div class='alert alert-warning'>
+                <div class='alert alert-dark'>
                     <p id='changingThought'>Hello</p>
                 </div>
             </aside>
@@ -58,14 +58,16 @@
         <button class='btn btn-info'>
             <a href='./woods.html'><strong>Wander into the woods.</strong></a>
         </button>
-        <button class='btn btn-warning' role='button' onclick="showAction()">
+        <button class='btn btn-warning' role='button' id='stay'>
             <a href='#'>Just sit in the meadow.</a>
         </button>
         <button class='btn btn-info'>
-            <a href='./clouds.html' target="_blank">Gaze at the clouds.</a>
+            <a href='./clouds.html'>Gaze at the clouds.</a>
         </button>
     </div>
 
+
+    <script type='text/javascript' src='js.js'></script>
 </body>
 
 </html>
