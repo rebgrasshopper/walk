@@ -1,5 +1,5 @@
 
-// ARRAY VARIABLES
+// PROSE VARIABLE
 
 const prose = {meadow:
   {thoughts:[

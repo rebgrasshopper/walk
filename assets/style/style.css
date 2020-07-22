@@ -94,7 +94,7 @@ img {
 /*   ACTION LINKS   */
 
 .buttonBank {
-    margin-top: -80px;
+    margin-top: 10px;
 }
 
 a {
@@ -117,11 +117,40 @@ a:hover {
 a:focus {
     background-color: fuchsia;
     color: rgb(55, 15, 65);
-    font-size: larger;
 }
 
 a:active {
     background-color: indigo;
     color: rgb(228, 156, 247);
-    font-size: larger;
+}
+
+/*   MEDIA QUERIES   */
+
+@media screen and (max-width: 767px) {
+
+    .main {
+        margin: 0px !important;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
+
+
+@media screen and (max-width: 500) {
+    .nav li a {
+        font-size: 8vw !important;
+    }
+
+    .nav li a:after {
+        font-size: 8vw;
+    }
+
+    .nav li a:focus {
+        font-size: 8vw;
+    }
+
+    .nav li a:hover {
+        font-size: 8vw;
+    }
 }

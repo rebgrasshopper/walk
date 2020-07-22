@@ -4,9 +4,9 @@
 <head>
     <title>A Meadow</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=MuseoModerno'>
     <link rel='stylesheet' type='text/css' href='./assets/style/style.css'>
@@ -37,34 +37,37 @@
         <header class="row"><h1 class="col-12">A Meadow</h1></header>
 
         <div class="row d-flex align-items-center">
-            <aside id='action' class='pop col-3'>
+            <aside id='action' class='pop col-xs-12 col-sm-3'>
                 <div class='alert alert-success'>
                     <p>You sit<br />...<br />peacefully gazing at the flowers as they sway in the breeze.</p>
                 </div>
             </aside>
 
-            <img src="./assets/meadow-photo-by-Kristina-Paukshtite-pexels.jpg" class="col-6" title="a close-up show of wildflowers in a meadow: red, blue, purple, white, and yellow flowers">
+            <img src="./assets/meadow-photo-by-Kristina-Paukshtite-pexels.jpg" class="col-xs-12 col-sm-6" title="a close-up show of wildflowers in a meadow: red, blue, purple, white, and yellow flowers">
 
-            <aside id='thought' class='pop col-3'>
+            <aside id='thought' class='pop col-xs-12 col-sm-3'>
                 <div class='alert alert-dark'>
                     <p id='changingThought'>Hello</p>
                 </div>
             </aside>
         </div><!--/row-->
-    </div><!--/main-->
+
 
 <!--BUTTONS-->
-    <div class='buttonBank'>
-        <button class='btn btn-info'>
-            <a href='./woods.html'><strong>Wander into the woods.</strong></a>
-        </button>
-        <button class='btn btn-warning' role='button' id='stay'>
-            <a href='#'>Just sit in the meadow.</a>
-        </button>
-        <button class='btn btn-info'>
-            <a href='./clouds.html'>Gaze at the clouds.</a>
-        </button>
-    </div>
+    <div class='buttonBank row'>
+        <div class="col-12">
+            <button class='btn btn-info'>
+                <a href='./woods.html'><strong>Wander into the woods.</strong></a>
+            </button>
+            <button class='btn btn-warning' role='button' id='stay'>
+                <a href='#'>Just sit in the meadow.</a>
+            </button>
+            <button class='btn btn-info'>
+                <a href='./clouds.html'>Gaze at the clouds.</a>
+            </button>
+        </div><!--/col-12-->
+    </div><!--/buttonBank row-->
+</div><!--/main-->
 
 
     <script type='text/javascript' src='js.js'></script>
